@@ -1,7 +1,7 @@
 # ============================================================
 # .github/workflows/leakage-check.yml (ALL-PY-REPOS)
 # ============================================================
-# Updated: 2026-08-16
+# Updated: 2026-08-19
 
 # Fails a PR/commit if metadata files leak another project's name,
 # mismatch versions, or reference a stale template source.
