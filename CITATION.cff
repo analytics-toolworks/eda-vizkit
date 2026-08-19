@@ -1,0 +1,51 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+# REQ.UNIVERSAL: Professional open projects SHOULD include this file.
+# WHY: Support correct citation and attribution.
+# ALT: Internal or private repositories may omit citation metadata.
+# CUSTOM: Update author, repository, license, and keyword fields as needed.
+# USAGE: See https://citation-file-format.github.io/ for details.
+
+cff-version: "1.2.0"
+message: "If using this project, please cite it as described in this file."
+type: software
+
+title: "eda-vizkit"
+version: "0.0.1"
+date-released: "2026-08-19"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, USA"
+
+repository-code: "https://github.com/analytics-toolworks/eda-vizkit"
+url: "https://github.com/analytics-toolworks/eda-vizkit"
+license: MIT
+
+abstract: |
+  Reusable visualizations for exploratory data analysis. Provides concise,
+  high-level Python functions for inspecting distributions, relationships,
+  and data quality in tabular data. Works with ordinary pandas DataFrames
+  and explicit visualization inputs; it does not clean data, classify
+  variables, select analyses, or make analytical decisions. Functions return
+  Matplotlib Axes objects, leaving display and composition to the caller.
+
+keywords:
+  - exploratory-data-analysis
+  - eda
+  - visualization
+  - data-exploration
+  - data-quality
+  - distributions
+  - relationships
+  - pandas
+  - matplotlib
+  - python
+  - data-science
+  - analytics
+  - reproducible-workflows
+  - open-source
