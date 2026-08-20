@@ -1,4 +1,4 @@
-r"""Relationship visualizations for exploratory data analysis."""
+"""Relationship visualizations for exploratory data analysis."""
 
 from matplotlib.axes import Axes
 import matplotlib.pyplot as plt
@@ -17,7 +17,17 @@ def show_numeric_relationship(
     y: str,
     ax: Axes | None = None,
 ) -> Axes:
-    """Show the relationship between two numeric variables."""
+    """Show the relationship between two numeric variables.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing the data.
+        x (str): The name of the numeric column to be used as the x-axis.
+        y (str): The name of the numeric column to be used as the y-axis.
+        ax (Axes | None, optional): The matplotlib Axes object to plot on. If None, a new figure and axes will be created.
+
+    Returns:
+        Axes: The matplotlib Axes object containing the plot.
+    """
     require_numeric_column(df, column=x)
     require_numeric_column(df, column=y)
 
@@ -45,7 +55,17 @@ def show_numeric_by_category(
     category: str,
     ax: Axes | None = None,
 ) -> Axes:
-    """Show a numeric distribution across categories."""
+    """Show a numeric distribution across categories.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing the data.
+        numeric (str): The name of the numeric column.
+        category (str): The name of the categorical column.
+        ax (Axes | None, optional): The matplotlib Axes object to plot on. If None, a new figure and axes will be created.
+
+    Returns:
+        Axes: The matplotlib Axes object containing the plot.
+    """
     require_numeric_column(df, column=numeric)
     require_columns(df, columns=[category])
 

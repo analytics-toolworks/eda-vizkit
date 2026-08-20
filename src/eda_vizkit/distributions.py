@@ -1,4 +1,4 @@
-r"""Distribution visualizations for exploratory data analysis."""
+"""Distribution visualizations for exploratory data analysis."""
 
 from matplotlib.axes import Axes
 import matplotlib.pyplot as plt
@@ -17,7 +17,17 @@ def show_numeric_distribution(
     bins: int = 20,
     ax: Axes | None = None,
 ) -> Axes:
-    """Show the distribution of one numeric variable."""
+    """Show the distribution of one numeric variable.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing the data.
+        column (str): The name of the numeric column.
+        bins (int, optional): The number of bins for the histogram. Defaults to 20.
+        ax (Axes | None, optional): The matplotlib Axes object to plot on. If None, a new figure and axes will be created.
+
+    Returns:
+        Axes: The matplotlib Axes object containing the plot.
+    """
     require_numeric_column(df, column=column)
 
     if bins < 1:
@@ -42,7 +52,16 @@ def show_categorical_distribution(
     column: str,
     ax: Axes | None = None,
 ) -> Axes:
-    """Show category frequencies for one categorical variable."""
+    """Show category frequencies for one categorical variable.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing the data.
+        column (str): The name of the categorical column.
+        ax (Axes | None, optional): The matplotlib Axes object to plot on. If None, a new figure and axes will be created.
+
+    Returns:
+        Axes: The matplotlib Axes object containing the plot.
+    """
     require_columns(df, columns=[column])
 
     if ax is None:

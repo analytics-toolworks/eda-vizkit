@@ -1,4 +1,4 @@
-r"""Internal validation helpers for eda-vizkit."""
+"""Internal validation helpers for eda-vizkit."""
 
 from collections.abc import Iterable
 
@@ -10,7 +10,15 @@ def require_columns(
     *,
     columns: Iterable[str],
 ) -> None:
-    """Raise ValueError if required DataFrame columns are missing."""
+    """Raise ValueError if required DataFrame columns are missing.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to check.
+        columns (Iterable[str]): The required column names.
+
+    Raises:
+        ValueError: If any of the required columns are missing.
+    """
     required = tuple(columns)
     missing = [column for column in required if column not in df.columns]
 
@@ -24,7 +32,15 @@ def require_numeric_column(
     *,
     column: str,
 ) -> None:
-    """Raise ValueError if a required column is not numeric."""
+    """Raise ValueError if a required column is not numeric.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to check.
+        column (str): The name of the required numeric column.
+
+    Raises:
+        ValueError: If the column is not numeric.
+    """
     require_columns(df, columns=[column])
 
     if not pd.api.types.is_numeric_dtype(df[column]):

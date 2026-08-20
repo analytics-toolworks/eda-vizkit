@@ -1,4 +1,4 @@
-r"""Data-quality visualizations for exploratory data analysis."""
+"""Data-quality visualizations for exploratory data analysis."""
 
 from matplotlib.axes import Axes
 import matplotlib.pyplot as plt
@@ -10,7 +10,15 @@ def show_missing_values(
     *,
     ax: Axes | None = None,
 ) -> Axes:
-    """Show missing-value counts for DataFrame columns."""
+    """Show missing-value counts for DataFrame columns.
+
+    Args:
+        df (pd.DataFrame): The DataFrame containing the data.
+        ax (Axes | None, optional): The matplotlib Axes object to plot on. If None, a new figure and axes will be created.
+
+    Returns:
+        Axes: The matplotlib Axes object containing the plot.
+    """
     if ax is None:
         _, ax = plt.subplots()
 

@@ -88,6 +88,10 @@ Data quality:
 
 - `show_missing_values()`
 
+Output:
+
+- `save_chart()`
+
 ## Public Contract
 
 Every public visualization helper:
@@ -153,6 +157,31 @@ ax = show_numeric_by_category(
 from eda_vizkit import show_missing_values
 
 ax = show_missing_values(df)
+```
+
+## Example: Save Chart
+
+```python
+from eda_vizkit import save_chart, show_numeric_relationship
+
+ax = show_numeric_relationship(
+    df,
+    x="flipper_length_mm",
+    y="body_mass_g",
+)
+
+save_chart(
+    ax,
+    "docs/images/feature-target-scatter.png",
+)
+```
+
+## Example: Show Chart
+
+```python
+import matplotlib.pyplot as plt
+
+plt.show()
 ```
 
 ## Developer Command Reference

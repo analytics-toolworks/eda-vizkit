@@ -13,6 +13,15 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [0.1.0] - 2026-08-20
+
+### Added
+
+- `save_chart` function
+- additional docstrings
+
+---
+
 ## [0.0.1] - 2026-08-19
 
 ### Added
@@ -111,7 +120,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/analytics-toolworks/eda-vizkit/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/analytics-toolworks/eda-vizkit/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/analytics-toolworks/eda-vizkit/releases/tag/v0.1.0
 [0.0.1]: https://github.com/analytics-toolworks/eda-vizkit/releases/tag/v0.0.1
 
 <!-- markdownlint-enable MD024 -->
