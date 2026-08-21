@@ -4,7 +4,6 @@
 [![Docs Site](https://img.shields.io/badge/docs-site-blue?logo=github)](https://analytics-toolworks.github.io/eda-vizkit/)
 [![Python](https://img.shields.io/python/required-version-toml?tomlFilePath=https://raw.githubusercontent.com/analytics-toolworks/eda-vizkit/main/pyproject.toml&logo=python)](https://github.com/analytics-toolworks/eda-vizkit/blob/main/pyproject.toml)
 ![uv](https://img.shields.io/badge/uv-managed-DE5FE9)
-[![CI Status](https://github.com/analytics-toolworks/eda-vizkit/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/analytics-toolworks/eda-vizkit/actions/workflows/ci-python-zensical.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 [![CI](https://github.com/analytics-toolworks/eda-vizkit/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/analytics-toolworks/eda-vizkit/actions/workflows/ci-python-zensical.yml)
